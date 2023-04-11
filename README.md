@@ -35,6 +35,9 @@ Alphabetizer is a user-friendly Chrome extension designed to help you sort and o
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
+## Note
+The manifest requires you to add 48x48 and 128x128 .PNG icons to the folder.
+
 ## License
 
 [MIT License](LICENSE)
