@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Alphabetizer</h1>
+  <p id="infoText">Characters: 0 • Words: 0 • Lines: 0</p>
+  
+  <textarea id="inputText" placeholder="Enter your text here"></textarea>
+  <button id="alphabetizeButton">Alphabetize</button>
+  <button id="settingsButton">Settings</button>
+  <div id="settingsContainer" class="hidden">
+    <label for="delimiter">Delimiter:</label>
+    <input type="text" id="delimiter" placeholder="Delimiter (default: newline)" />
+  
+    <label for="sortOrder">Sort order:</label>
+    <select id="sortOrder">
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+  
+    <label for="caseSensitivity">Case sensitivity:</label>
+    <select id="caseSensitivity">
+      <option value="sensitive">Case-sensitive</option>
+      <option value="insensitive">Case-insensitive</option>
+    </select>
+  
+    <label><input type="checkbox" id="removeEmptyLines"> Remove empty lines</label>
+  
+    <label><input type="checkbox" id="sortByNumber"> Sort by number</label>
+  
+    <label for="textTransform">Text transformation:</label>
+    <select id="textTransform">
+      <option value="none">None</option>
+      <option value="upper">Uppercase</option>
+      <option value="lower">Lowercase</option>
+      <option value="trim">Trim spaces</option>
+    </select>
+  
+    <label><input type="checkbox" id="addListNumbering"> Add list numbering</label>
+    <label for="customText">Custom text at the beginning:</label>
+    <input type="text" id="customText" placeholder="Custom text at the beginning (optional)" />
+    <label><input type="checkbox" id="customTextPosition"> Add custom text to the end of the line</label>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
